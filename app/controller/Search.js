@@ -23,6 +23,5 @@ Ext.define('VOCABI.controller.Search', {
 	onRefilterSearch: function(view, value) {
 		Ext.getStore("Words").clearFilter(); 
 		Ext.getStore("Words").filter("word", new RegExp(value, 'i'));  
-		view.refresh(); 
 	}
 }); 

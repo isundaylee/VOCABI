@@ -43,10 +43,5 @@ Ext.define('VOCABI.view.Search', {
 	
 	getSearchValue: function() {
 		return this.down("#searchField").getValue(); 
-	}, 
-	
-	refresh: function() {
-		this.down("#wordsList").refresh(); 
 	}
-	
 }); 
