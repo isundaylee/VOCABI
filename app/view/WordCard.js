@@ -10,10 +10,13 @@ Ext.define("VOCABI.view.WordCard", {
 			'<div id="wordcard-desc">{desc}</div>', 
 			'<div id="wordcard-sample">{sample}</div>'
 		], 
-		styleHtmlContent: true
+		scrollable: true, 
+		styleHtmlContent: true, 
+		word: null, 
+		numId: 0
 	}, 
 	
-	setWord: function(word) {
+	applyWord: function(word) {
 		data = {
 			word: word.data.word, 
 			ps: word.data.ps, 
@@ -49,5 +52,6 @@ Ext.define("VOCABI.view.WordCard", {
 			].join(""); 
 		}
 		this.setHtml(this.getTpl().apply(data)); 
+		return word; 
 	}
 }); 

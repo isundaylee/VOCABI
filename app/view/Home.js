@@ -5,6 +5,7 @@ Ext.define('VOCABI.view.Home', {
 	config: {
 		iconCls: 'home', 
 		title: 'Home', 
+		scrollable: true, 
 		html: [
 			"<img id='homecard-logo' src='resources/images/logo.png' />", 
 			"<div id='homecard-title'>Welcome to VOCABI</div>", 

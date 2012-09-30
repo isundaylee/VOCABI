@@ -30,7 +30,7 @@ Ext.define('VOCABI.controller.Search', {
 	onShowWord: function(list, word) {
 		console.log("Word " + word.data.word + " tapped. "); 
 		Ext.create("VOCABI.view.Card"); 
-		this.getCardView().addWords([word]); 
+		this.getCardView().setWords([word]); 
 		this.getMainView().push(this.getCardView()); 
 	}
 }); 

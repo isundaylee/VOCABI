@@ -1,5 +1,7 @@
-Ext.define('VOCABI.store.Words', {
+Ext.define('VOCABI.store.Notes', {
 	extend: 'Ext.data.Store', 
+	requires: ['Ext.data.proxy.LocalStorage'], 
+	
 	config: {
 		model: 'VOCABI.model.Word', 
 		grouper: {
@@ -9,9 +11,8 @@ Ext.define('VOCABI.store.Words', {
 			}
 		}, 
 		proxy: {
-			type: 'ajax', 
-			url: 'resources/json/words.json',
-			reader: 'json'
+			type: 'localstorage', 
+			id: 'vocabi-Notes'
 		}
 	}
 }); 

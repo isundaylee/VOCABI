@@ -8,7 +8,7 @@ Ext.define('VOCABI.model.Wordlist', {
 		hasMany: [{
 			model: 'VOCABI.model.Word', 
 			name: 'words', 
-			associationKey: 'words'
+			associationKey: 'words', 
 		}]
 	}
 }); 

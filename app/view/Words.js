@@ -13,8 +13,10 @@ Ext.define('VOCABI.view.Words', {
 			xtype: 'list', 
 			itemId: 'wordsList', 
 			loadingText: 'Loading words...', 
+			indexBar: true, 
+			grouped: true, 
 			emptyText: '<div class="wordlistcard-list-text">No words found. </div>', 
-			itemTpl: '<div class="wordlistcard-list-item">{word} {mean}</div>',
+			itemTpl: '<div class="wordlistcard-list-item">{word}</div>',
 			flex: 1
 		}, {
 			xtype: 'toolbar', 

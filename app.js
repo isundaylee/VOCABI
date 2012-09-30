@@ -4,9 +4,9 @@ Ext.application({
 	icon: 'resources/images/app-icon.png', 
 	
 	views: ['Main', 'Words', 'Card'], 
-	models: ['Wordlist', 'Word'], 
-	stores: ['Wordlists', 'Words'],
-	controllers: ['Wordlists', 'Search', 'Words'], 
+	models: ['Wordlist', 'Word', 'Note'], 
+	stores: ['Wordlists', 'Words', 'Notes'],
+	controllers: ['Wordlists', 'Search', 'Words', 'Notebook', 'Cards'], 
 	
 	launch: function() {
 		Ext.Viewport.add([{xtype: 'mainview'}]);  

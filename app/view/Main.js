@@ -1,7 +1,7 @@
 Ext.define('VOCABI.view.Main', {
 	extend: 'Ext.navigation.View', 
 	xtype: 'mainview', 
-	requires: ['VOCABI.view.Home', 'VOCABI.view.Wordlist', 'VOCABI.view.Search', 'VOCABI.view.Notebook', 'VOCABI.view.Settings'], 
+	requires: ['Ext.tab.Panel', 'VOCABI.view.Home', 'VOCABI.view.Wordlist', 'VOCABI.view.Search', 'VOCABI.view.Notebook', 'VOCABI.view.Settings'], 
 	id: 'mainView', 
 	
 	config: {

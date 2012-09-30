@@ -1,6 +1,7 @@
 Ext.define('VOCABI.view.Search', {
 	extend: 'Ext.Panel', 
 	xtype: 'searchcard', 
+	requires: 'Ext.field.Search', 
 	
 	config: {
 		iconCls: 'search', 
@@ -18,6 +19,8 @@ Ext.define('VOCABI.view.Search', {
 			flex: 1, 
 			store: 'Words', 
 			itemId: 'wordsList', 
+			grouped: true, 
+			indexBar: true, 
 			loadingText: 'Loading words...', 
 			emptyText: '<div class="wordlistcard-list-text">No words found. </div>', 
 			itemTpl: '<div class="wordlistcard-list-item">{word}</div>'

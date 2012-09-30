@@ -21,13 +21,13 @@ Ext.define("VOCABI.controller.Words", {
 			arr.push(words.getAt(i)); 
 		}
 		Ext.create("VOCABI.view.Card"); 
-		this.getCardView().addWords(arr); 
+		this.getCardView().setWords(arr); 
 		this.getMainView().push(this.getCardView()); 
 	}, 
 	
 	onShowWord: function(word) {
 		Ext.create("VOCABI.view.Card"); 
-		this.getCardView().addWords([word]); 
+		this.getCardView().setWords([word]); 
 		this.getMainView().push(this.getCardView()); 
 	}
 }); 

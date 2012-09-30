@@ -22,8 +22,15 @@ Ext.define('VOCABI.controller.Wordlists', {
 	}, 
 	
 	onShowWordlistCommand: function(list, record) { 
-		var wordsView = Ext.create("VOCABI.view.Words"); 
-		wordsView.setStore(record.words()); 
+		var wordsView = Ext.create("VOCABI.view.Words");
+		var store = record.words(); 
+		store.setGrouper({
+			groupFn: function(record) {
+				c = record.get('word').charAt(0); 
+				return c.match(/[a-z]/i) ? c.toUpperCase() : '#'; 
+			}
+		}); 
+		wordsView.setStore(store); 
 		this.getMainView().push(wordsView); 
 	}
 }); 
