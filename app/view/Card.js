@@ -56,6 +56,7 @@ Ext.define("VOCABI.view.Card", {
 	}, 
 	
 	refreshView: function() {
+		console.log('Refreshed'); 
 		card = this.getActiveItem(); 
 		this.setToolbarTitle(card.getNumId()); 
 		store = Ext.getStore("Notes"); 
