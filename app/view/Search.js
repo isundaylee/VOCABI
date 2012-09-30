@@ -1,7 +1,7 @@
 Ext.define('VOCABI.view.Search', {
 	extend: 'Ext.Panel', 
 	xtype: 'searchcard', 
-	requires: 'Ext.field.Search', 
+	requires: ['Ext.field.Search', 'Ext.dataview.List'], 
 	
 	config: {
 		iconCls: 'search', 

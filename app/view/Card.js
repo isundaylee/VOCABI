@@ -1,7 +1,7 @@
 Ext.define("VOCABI.view.Card", {
 	extend: "Ext.Carousel", 
 	xtype: "cardview", 
-	requires: ['VOCABI.view.WordCard'], 
+	requires: ['VOCABI.view.WordCard', 'Ext.Toolbar', 'Ext.Button'], 
 	
 	config: {
 		title: 'Word Cards', 

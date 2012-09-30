@@ -1,7 +1,7 @@
 Ext.define('VOCABI.view.Wordlist', {
 	extend: 'Ext.Panel', 
 	xtype: 'wordlistcard', 
-	requires: ['Ext.TitleBar', 'Ext.dataview.List', 'Ext.data.ArrayStore', 'Ext.data.reader.Array'],
+	requires: ['Ext.dataview.List'],
 	
 	config: {
 		iconCls: 'list', 

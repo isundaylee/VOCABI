@@ -1,6 +1,7 @@
 Ext.define('VOCABI.view.Notebook', {
 	extend: 'Ext.Panel', 
 	xtype: 'notebookcard', 
+	requires: ['Ext.dataview.List', 'Ext.Toolbar', 'Ext.Button'], 
 	
 	config: {
 		iconCls: 'note2', 
