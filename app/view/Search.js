@@ -30,6 +30,10 @@ Ext.define('VOCABI.view.Search', {
 			delegate: '#searchField', 
 			event: 'clearicontap', 
 			fn: 'onSearchFieldClear'
+		}, {
+			delegate: '#wordsList', 
+			event: 'itemtap', 
+			fn: 'onWordsListItemTap'
 		}]
 	}, 
 	
@@ -43,5 +47,9 @@ Ext.define('VOCABI.view.Search', {
 	
 	getSearchValue: function() {
 		return this.down("#searchField").getValue(); 
+	}, 
+	
+	onWordsListItemTap: function(list, index, target, record, event) {
+		this.fireEvent("showWord", list, record); 
 	}
 }); 

@@ -4,11 +4,13 @@ Ext.define('VOCABI.controller.Search', {
 	config: {
 		refs: {
 			searchView: 'searchcard', 
-			mainView: 'mainview'
+			mainView: 'mainview', 
+			cardView: 'cardview'
 		}, 
 		control: {
 			searchView: {
-				refilterSearch: 'onRefilterSearch'
+				refilterSearch: 'onRefilterSearch',
+				showWord: 'onShowWord'
 			}
 		}
 	},
@@ -23,5 +25,12 @@ Ext.define('VOCABI.controller.Search', {
 	onRefilterSearch: function(view, value) {
 		Ext.getStore("Words").clearFilter(); 
 		Ext.getStore("Words").filter("word", new RegExp(value, 'i'));  
+	}, 
+	
+	onShowWord: function(list, word) {
+		console.log("Word " + word.data.word + " tapped. "); 
+		Ext.create("VOCABI.view.Card"); 
+		this.getCardView().addWords([word]); 
+		this.getMainView().push(this.getCardView()); 
 	}
 }); 

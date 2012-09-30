@@ -21,5 +21,51 @@
 	color: #7f7f7f;
 	position: absolute; 
 	top: 50%;
+	left: 0;
 	width: 100%;
+}
+
+.wordcard-text {
+	text-align: center; 
+	color: #7f7f7f; 
+	width: 100%;
+	position: absolute; 
+	top: 50%;
+	left: 0;
+}
+
+#wordcard-title {
+	color: black; 
+	font-size: 200%; 
+}
+
+#wordcard-ps {
+	color: #7f7f7f; 
+	font-size: 100%; 
+}
+
+#wordcard-mean {
+	color: black; 
+	font-size: 100%; 
+	margin-top: 1.5em;
+}
+
+#wordcard-sample {
+	margin-top: 1.5em;
+}
+
+.wordcard-seperator {
+	width: 90%; 
+	color: #7f7f7f;
+	margin: 2em auto;
+}
+
+#wordcard-sample-list li {
+	color: black;
+	font-size: 100%; 
+	margin: 0.3em 0;
+}
+
+#wordcard-desc {
+	margin-top: 1.5em; 
 }
